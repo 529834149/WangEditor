@@ -1,0 +1,19 @@
+{
+    "name": "seaony/wangeditor",
+    "description": "this is wangeditor for laravel5.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "seaony",
+            "email": "seaony@seaony.cn"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Seaony\\WangEditor\\": "src/"
+        }
+    },
+    "require": {
+        "seaony/wangeditor": "dev-master"
+    }
+}
