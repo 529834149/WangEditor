@@ -13,7 +13,7 @@ WangEditor for Laravel 5.
 ## Install
 
 ```shell
-$ composer require "seaony/wangeditor:~1.0"
+$ composer require seaony/wangeditor:dev-master
 ```
 
 ## Contributing
@@ -24,9 +24,9 @@ $ composer require "seaony/wangeditor:~1.0"
     Seaony\WangEditor\WangEditorProvider::class,
     ```
 
-2. 发布资源与配置文件 (在你的命令行中运行)
+2. 发布资源与配置文件
 
-    ```php
+    ```shell
     $ php artisan vendor:publish --provider='Seaony\WangEditor\WangEditorProvider'
     ```
 
@@ -36,6 +36,19 @@ $ composer require "seaony/wangeditor:~1.0"
     @include('vendor.wangeditor.initialize', ['id' => 'PickEditor'])
     ```
 
+4. 创建 `storage` 到 `public` 的软链接
+
+    ```shell
+    $ php artisan storage:link
+    ```
+    
+5. 正确配置你 `.env` 文件中的域名
+
+    ```php
+    APP_URL=yourdomain
+    ```
+    
+    
 # 七牛云支持
 
 如果你想使用七牛云储存：
